@@ -3,12 +3,32 @@
     "title": "Project Title 1",
     "description": "Brief description of the project.",
     "produrl": "https://www.example.com/projects/project1",
-    "srcurl": "https://github.com/source/source"
+    "srcurl": "https://github.com/source/source",
+    "skills": [
+      {
+        "name": "JavaScript",
+        "logo": "https://example.com/logos/javascript.png"
+      },
+      {
+        "name": "React",
+        "logo": "https://example.com/logos/react.png"
+      }
+    ]
   },
   {
     "title": "Project Title 2",
     "description": "Brief description of the project.",
-    "produrl": "https://www.example.com/projects/project1",
-    "srcurl": "https://github.com/source/source"
+    "produrl": "https://www.example.com/projects/project2",
+    "srcurl": "https://github.com/source/source",
+    "skills": [
+      {
+        "name": "Node.js",
+        "logo": "https://example.com/logos/nodejs.png"
+      },
+      {
+        "name": "Express",
+        "logo": "https://example.com/logos/express.png"
+      }
+    ]
   }
 ]
