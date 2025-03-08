@@ -2,11 +2,13 @@
   {
     "title": "Project Title 1",
     "description": "Brief description of the project.",
-    "url": "/projects/project1"
+    "produrl": "https://www.example.com/projects/project1",
+    "srcurl": "https://github.com/source/source"
   },
   {
     "title": "Project Title 2",
     "description": "Brief description of the project.",
-    "url": "/projects/project2"
+    "produrl": "https://www.example.com/projects/project1",
+    "srcurl": "https://github.com/source/source"
   }
 ]
