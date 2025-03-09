@@ -1,37 +1,129 @@
 [
+  
+  {
+    "name": "Python",
+    "type": "Language",
+    "logo": "https://img.icons8.com/color/48/python--v1.png",
+    "experience": 4,
+    "description": "A high-level programming language known for its readability and versatility."
+  },
+  {
+    "name": "Java",
+    "type": "Language",
+    "logo": "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png",
+    "experience": 4,
+    "description": "A high-level programming language known for its readability and versatility."
+  }, 
+  {
+    "name": "Redis",
+    "type": "Database",
+    "logo": "https://img.icons8.com/color/48/redis--v2.png",
+    "experience": 4,
+    "description": "In memory Datbase"
+  },
+  {
+    "name": "PostgreSQL",
+    "type": "Database",
+    "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png",
+    "experience": 4,
+    "description": "Schema Based Database"
+  },
+  {
+    "name": "Django REST Framework",
+    "type": "Framework",
+    "logo": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-shadow-tal-revivo.png",
+    "experience": 4,
+    "description": "Python Framework"
+  },
+  {
+    "name": "Celery",
+    "type": "Framework",
+    "logo": "https://img.icons8.com/color/48/celery-task-queue.png",
+    "experience": 3,
+    "description": "Asynchronous Task Queue"
+  },
+  {
+    "name": "Git",
+    "type": "Version Control",
+    "logo": "https://img.icons8.com/color/48/git.png",
+    "experience": 4,
+    "description": "A distributed version control system for tracking changes in source code during software development."
+  },
+  {
+    "name": "Nginx",
+    "type": "Web Server",
+    "logo": "https://img.icons8.com/color/48/nginx.png",
+    "experience": 3,
+    "description": "A web server that can also be used as a reverse proxy, load balancer, mail proxy, and HTTP cache."
+  },
+  {
+    "name": "Gunicorn",
+    "type": "Web Server",
+    "logo": "https://img.icons8.com/color/48/gunicorn.png",
+    "experience": 3,
+    "description": "A Python WSGI HTTP Server for UNIX."
+  },
+  {
+    "name": "Nvidia Deepstream",
+    "type": "Language",
+    "logo": "https://img.icons8.com/color/48/nvidia.png",
+    "experience": 4,
+    "description": "Video Analytics Toolkit"
+  },
+  {
+    "name": "Apache Kafka",
+    "type": "Event Streaming",
+    "logo": "https://img.icons8.com/nolan/64/apache-kafka.png",
+    "experience": 2,
+    "description": "Apache Kafka is an open-source distributed streaming system used for stream processing, real-time data pipelines, and data integration at scale. "
+  },
+  {
+    "name": "Linux",
+    "type": "Operating System",
+    "logo": "https://img.icons8.com/color/48/linux--v1.png",
+    "experience": 3,
+    "description": "Operating System"
+  },
   {
     "name": "JavaScript",
     "type": "Language",
-    "logo": "https://example.com/logos/javascript.png",
-    "experience": 5,
+    "logo": "https://img.icons8.com/fluency/48/javascript.png",
+    "experience": 3,
     "description": "A versatile programming language primarily used for web development."
   },
   {
     "name": "React",
     "type": "Framework",
-    "logo": "https://example.com/logos/react.png",
-    "experience": 4,
-    "description": "A JavaScript library for building user interfaces."
-  },
-  {
-    "name": "Node.js",
-    "type": "Runtime",
-    "logo": "https://example.com/logos/nodejs.png",
-    "experience": 4,
-    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
-  },
-  {
-    "name": "Python",
-    "type": "Language",
-    "logo": "https://example.com/logos/python.png",
+    "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
     "experience": 3,
-    "description": "A high-level programming language known for its readability and versatility."
+    "description": "A JavaScript library for building user interfaces."
   },
   {
     "name": "HTML & CSS",
     "type": "Language",
-    "logo": "https://example.com/logos/html-css.png",
-    "experience": 5,
+    "logo": "https://img.icons8.com/color/48/html-5--v1.png",
+    "experience": 3,
     "description": "The standard markup language and style sheet language for creating web pages."
+  },
+  {
+    "name": "Docker",
+    "type": "Containerization",
+    "logo": "https://img.icons8.com/color/48/docker.png",
+    "experience": 2,
+    "description": "A platform for developing, shipping, and running applications in containers."
+  },
+  {
+    "name": "Kubernetes",
+    "type": "Container Orchestration",
+    "logo": "https://img.icons8.com/color/48/kubernetes.png",
+    "experience": 2,
+    "description": "An open-source container-orchestration system for automating application deployment, scaling, and management."
+  },
+  {
+    "name": "AWS",
+    "type": "Cloud Services",
+    "logo": "https://img.icons8.com/color/48/amazon-web-services.png",
+    "experience": 2,
+    "description": "A subsidiary of Amazon providing on-demand cloud computing platforms and APIs."
   }
 ]

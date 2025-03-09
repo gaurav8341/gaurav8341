@@ -1,14 +1,14 @@
 [
   {
-    "title": "Blog Post Title 1",
-    "excerpt": "Excerpt from the blog post.",
-    "url": "/blogs/blog1",
-    "id": 1
+    "title": "Json Web Tokens",
+    "excerpt": "Lets see how JWT auth works",
+    "url": "https://raw.githubusercontent.com/gaurav8341/LearnWithMe/refs/heads/main/Learnings/JWT.md",
+    "id": "jwt"
   },
   {
-    "title": "Blog Post Title 2",
-    "excerpt": "Excerpt from the blog post.",
-    "url": "/blogs/blog2",
-    "id": 2
+    "title": "Heap Data Structures",
+    "excerpt": "HEap Data Strcutures and its implementation",
+    "url": "https://raw.githubusercontent.com/gaurav8341/LearnWithMe/refs/heads/main/Learnings/heap-ds.md",
+    "id": "heap-ds"
   }
 ]

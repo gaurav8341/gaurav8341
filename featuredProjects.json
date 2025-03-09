@@ -1,9 +1,9 @@
 [
   {
-    "title": "Project Title 1",
-    "description": "Brief description of the project.",
-    "produrl": "https://www.example.com/projects/project1",
-    "srcurl": "https://github.com/source/source",
+    "title": "Personal Portfolio",
+    "description": "This project is a personal website built using React and deployed on GitHub Pages. The website features a responsive design, ensuring a seamless experience across different devices. It includes several key sections such as profile, featured projects, blog posts, and skills.",
+    "produrl": "https://gaurav8341.github.io/",
+    "srcurl": "https://github.com/gaurav8341/gaurav8341.github.io",
     "skills": [
       {
         "name": "JavaScript",
@@ -11,23 +11,15 @@
       },
       {
         "name": "React",
-        "logo": "https://example.com/logos/react.png"
-      }
-    ]
-  },
-  {
-    "title": "Project Title 2",
-    "description": "Brief description of the project.",
-    "produrl": "https://www.example.com/projects/project2",
-    "srcurl": "https://github.com/source/source",
-    "skills": [
-      {
-        "name": "Node.js",
-        "logo": "https://example.com/logos/nodejs.png"
+        "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
       },
       {
-        "name": "Express",
-        "logo": "https://example.com/logos/express.png"
+        "name": "HTML & CSS",
+        "logo": "https://img.icons8.com/color/48/html-5--v1.png"
+      },
+      {
+        "name": "Git",
+        "logo": "https://img.icons8.com/color/48/git.png"
       }
     ]
   }
