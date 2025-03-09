@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaurav's README</title>
+    <style>
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skill {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            position: relative;
+            width: 300px;
+        }
+        .skill img {
+            margin-right: 10px;
+        }
+        .stars {
+            color: gold;
+        }
+        .description {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            width: 200px;
+        }
+        .skill:hover .description {
+            display: block;
+        }
+        .skill-type {
+            border-radius: 3px;
+            display: inline-block;
+            font-size: .8rem;
+            margin-top: .5rem;
+            padding: .2rem .5rem;
+        }
+    </style>
 </head>
 <body>
-    <img width="30px" margin="0px" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif">
-    <h1>Howdy!, I am <a href="https://github.com/gaurav8341">Gaurav</a> <img height="30px" src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430"></h1>
+    <img width="30px" margin="0px" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt="Hi">
+    <h1>Howdy!, I am <a href="https://github.com/gaurav8341">Gaurav</a> <img height="30px" src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" alt="Sunglasses"></h1>
 
     <h3>📬 Find me at</h3>
     <p>
@@ -25,13 +66,13 @@
         </a>
     </p>
 
-    <h3>A little about me... <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"></h3>
+    <h3>A little about me... <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50" alt="About me"></h3>
     <p>I'm a software developer currently working on mostly python and Django. I like to go beyond documentation and peek inside the implementation of things. I like to build and break few things in the process.</p>
 
     <h2>⚡️ A Few Quick Facts</h2>
     <ul>
         <li>🔭 I’m currently working as a Software Engineer at <a href="https://vast.vision">[@ Paralaxiom 🅾️]</a></li>
-        <li><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> I enjoy to work and learn about on
+        <li><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30" alt="Learning"> I enjoy to work and learn about on
             <ul>
                 <li>💻 Backend Dev.</li>
                 <li>📑 Database</li>
@@ -46,22 +87,30 @@
     </ul>
 
     <h3>⚙️ Some Tool and Tech I use</h3>
-    <p>
-        <code><img height="30" src="https://avatars0.githubusercontent.com/u/1525981?s=200&v=4"></code>
-        <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"></code>
-        <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-        <code><img height="30" src="https://avatars3.githubusercontent.com/u/9950313?s=200&v=4"></code>
-        <code><img height="30" src="https://avatars1.githubusercontent.com/u/45120?s=200&v=4"></code>
-        <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
-        <code><img height="30" src="https://avatars1.githubusercontent.com/u/1517864?s=200&v=4"></code>
-        <code><img height="30" src="https://avatars1.githubusercontent.com/u/2918581?s=200&v=4"></code>
-        <code><img height="30" src="https://avatars3.githubusercontent.com/u/18133?s=200&v=4"></code>
-        <code><img height="30" src="https://avatars1.githubusercontent.com/u/5009934?s=200&v=4"></code>
-        <code><img height="30" src="https://avatars0.githubusercontent.com/u/365630?s=88&v=4"></code>
-        <code><img height="30" src="https://avatars.githubusercontent.com/u/15658638"></code>
-        <code><img height="30" src="https://avatars.githubusercontent.com/u/34455048"></code>
-        <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/raspberry-pi.png"></code>
-        <code><img height="30" src="https://avatars2.githubusercontent.com/u/1728152?s=200&v=4"></code>
-    </p>
+
+    <div id="skills" class="skills-container"></div>
+
+    <script>
+        fetch('skills.json')
+            .then(response => response.json())
+            .then(skills => {
+                const skillsContainer = document.getElementById('skills');
+                skills.forEach(skill => {
+                    const skillDiv = document.createElement('div');
+                    skillDiv.className = 'skill';
+                    skillDiv.innerHTML = `
+                        <img src="${skill.logo}" alt="${skill.name}" class="skill-logo" width="48" height="48">
+                        <span class="skill-type ${skill.type.toLowerCase().replace(' ', '-')}">${skill.type}</span>
+                        <div class="experience">
+                            ${Array.from({ length: skill.experience }).map(() => '<span class="star">&#9733;</span>').join('')}
+                            ${Array.from({ length: 5 - skill.experience }).map(() => '<span class="star">&#9734;</span>').join('')}
+                        </div>
+                        <div class="description">${skill.description}</div>
+                    `;
+                    skillsContainer.appendChild(skillDiv);
+                });
+            })
+            .catch(error => console.error('Error fetching skills:', error));
+    </script>
 </body>
 </html>
