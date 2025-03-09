@@ -85,32 +85,5 @@
         <li>♟️ Also I play chess.</li>
         <li>📙 Check out my <a href="https://www.linkedin.com/in/gaurav8341/">Resume</a></li>
     </ul>
-
-    <h3>⚙️ Some Tool and Tech I use</h3>
-
-    <div id="skills" class="skills-container"></div>
-
-    <script>
-        fetch('skills.json')
-            .then(response => response.json())
-            .then(skills => {
-                const skillsContainer = document.getElementById('skills');
-                skills.forEach(skill => {
-                    const skillDiv = document.createElement('div');
-                    skillDiv.className = 'skill';
-                    skillDiv.innerHTML = `
-                        <img src="${skill.logo}" alt="${skill.name}" class="skill-logo" width="48" height="48">
-                        <span class="skill-type ${skill.type.toLowerCase().replace(' ', '-')}">${skill.type}</span>
-                        <div class="experience">
-                            ${Array.from({ length: skill.experience }).map(() => '<span class="star">&#9733;</span>').join('')}
-                            ${Array.from({ length: 5 - skill.experience }).map(() => '<span class="star">&#9734;</span>').join('')}
-                        </div>
-                        <div class="description">${skill.description}</div>
-                    `;
-                    skillsContainer.appendChild(skillDiv);
-                });
-            })
-            .catch(error => console.error('Error fetching skills:', error));
-    </script>
 </body>
 </html>
