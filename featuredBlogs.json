@@ -3,12 +3,14 @@
     "title": "Json Web Tokens",
     "excerpt": "Lets see how JWT auth works",
     "url": "https://raw.githubusercontent.com/gaurav8341/LearnWithMe/refs/heads/main/Learnings/JWT.md",
-    "id": "jwt"
+    "id": "jwt",
+    "active":true
   },
   {
     "title": "Heap Data Structures",
-    "excerpt": "HEap Data Strcutures and its implementation",
+    "excerpt": "Heap Data Strcutures and its implementation",
     "url": "https://raw.githubusercontent.com/gaurav8341/LearnWithMe/refs/heads/main/Learnings/heap-ds.md",
-    "id": "heap-ds"
+    "id": "heap-ds",
+    "active": true
   }
 ]

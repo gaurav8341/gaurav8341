@@ -1,9 +1,10 @@
 [
   {
     "title": "Personal Portfolio",
-    "description": "This project is a personal website built using React and deployed on GitHub Pages. The website features a responsive design, ensuring a seamless experience across different devices. It includes several key sections such as profile, featured projects, blog posts, and skills.",
-    "produrl": "https://gaurav8341.github.io/",
-    "srcurl": "https://github.com/gaurav8341/gaurav8341.github.io",
+    "description": "This project is a personal website built using React and deployed on Vercel. The website features a responsive design, ensuring a seamless experience across different devices. It includes several key sections such as profile, featured projects, blog posts, and skills all configurable.",
+    "produrl": "https://gauravrajput.vercel.app/",
+    "srcurl": "https://github.com/gaurav8341/portfolio-blogs",
+    "active": true,
     "skills": [
       {
         "name": "JavaScript",
@@ -16,10 +17,30 @@
       {
         "name": "HTML & CSS",
         "logo": "https://img.icons8.com/color/48/html-5--v1.png"
+      }
+    ]
+  },{
+    "title": "IRCTC Ticketing API",
+    "description": "This is a Django-based ticket reservation system. The project allows users to book, cancel, and view tickets and available berths deployed using Docker",
+    "produrl": null,
+    "srcurl": "https://github.com/gaurav8341/Ticketing",
+    "active": true,
+    "skills": [
+      {
+        "name": "Python",
+        "logo": "https://img.icons8.com/color/48/python--v1.png"
       },
       {
-        "name": "Git",
-        "logo": "https://img.icons8.com/color/48/git.png"
+        "name": "Djngo",
+        "logo": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-shadow-tal-revivo.png"
+      },
+      {
+        "name": "Docker",
+        "logo": "https://img.icons8.com/color/48/docker.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-color-tal-revivo.png"
       }
     ]
   }
